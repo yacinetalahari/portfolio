@@ -1,0 +1,23 @@
+body{
+    background-color:#081c29 ;
+}
+.box1{
+text-align: center;
+margin: 200px;
+}
+.box1 p{
+    font-size: 30px;
+    text-shadow:5px 5px 20px #13dbff;
+    
+}
+.box1 a{
+    color: #13dbff;
+    text-decoration: none;
+    text-shadow:5px 5px 20px #13dbff;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.box1 a:hover{
+    transform: scale(1.05);
+    text-shadow: none;
+}

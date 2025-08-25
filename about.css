@@ -1,0 +1,146 @@
+*{
+      font-family: 'Trebuchet MS', sans-serif;
+      
+}
+body{
+    background-color:  #081c29;
+}
+header{
+   text-align: center;
+  color: white;
+   padding: 25px;
+   margin: 0px;
+   font-size: 20px;
+   border-radius: 10px;
+}
+h1:hover{
+    animation-name: grow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state:running;
+    animation-timing-function:steps(20);
+
+}
+.articles{
+    text-align: center;
+    display: flex;
+    padding: 40px;
+    color: white;
+    height: auto;
+    justify-content: center;
+    
+}
+.articles .article1:hover{
+    transform: scale(1.05);
+    
+}
+.articles .article2:hover{
+    transform: scale(1.05);
+    
+}
+.articles .article3:hover{
+    transform: scale(1.05);
+    
+}
+.articles .article4:hover{
+    transform: scale(1.05);
+    
+}
+h2{
+    font-size: 25px;
+}
+.article1{
+    background-color:#081c29;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    
+}
+.article1 i{
+    padding:20px ;
+}
+.article1 i:hover{
+    animation-name: grow;
+    cursor: pointer;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state:running;
+    animation-timing-function:steps(20);
+
+}
+.article2{
+    background-color: #081c29;
+    align-items: flex-start;
+    padding: 25px;
+  
+    margin: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+}
+.article3{
+       background-color:#081c29;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 10px;
+    width: 400px;
+    border-style: groove;
+    border-radius: 10px;
+    height: 300px;
+}
+.article4{
+       background-color:#081c29;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+}
+@keyframes grow {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article1 {
+    width: 90%;
+  }
+  .article2{
+    width: 90%;
+  }
+  .article3 {
+    width: 90%;
+  }
+  .article4 {
+    width: 90%;
+  }
+}
+button {
+  margin: 4px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  border-color: white;
+   background-color: #081c29;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
