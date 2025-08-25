@@ -151,29 +151,39 @@ h2 {
 #B2:hover {
   font-size: 13px;
 }
-/* Make navbar responsive */
+/* 🔥 Add this at the bottom of your CSS file */
 @media (max-width: 768px) {
-  nav ul {
+  .navbar ul {
     display: flex;
-    flex-direction: column;  /* stack links vertically */
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;   /* stack items vertically */
+    align-items: flex-start;  /* align to the left */
+    padding: 10px;
   }
 
-  nav ul li {
+  .navbar li {
+    float: none;              /* remove float on mobile */
+    width: 100%;              /* full width links */
     margin: 5px 0;
   }
-}
 
-/* Make hero image smaller on phones */
-@media (max-width: 768px) {
-  .hero img {
-    width: 80%;   /* shrink image */
-    max-width: 300px;
+  .navbar a {
+    padding: 15px 20px;       /* smaller padding */
+    margin: 0;
+    text-align: left;
+    width: 100%;
   }
 
-  .hero h1 {
-    font-size: 20px; /* smaller text */
-    text-align: center;
+  .navbar #logo {
+    position: static;         /* no absolute positioning */
+    height: 80px;
+    width: auto;
+    margin: 0 auto 10px auto; /* center logo */
+    display: block;
+  }
+
+  .navbar button {
+    position: static;         /* remove absolute */
+    margin: 10px 0;
+    font-size: 18px;
   }
 }
