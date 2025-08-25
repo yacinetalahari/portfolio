@@ -151,3 +151,29 @@ h2 {
 #B2:hover {
   font-size: 13px;
 }
+/* Make navbar responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;  /* stack links vertically */
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Make hero image smaller on phones */
+@media (max-width: 768px) {
+  .hero img {
+    width: 80%;   /* shrink image */
+    max-width: 300px;
+  }
+
+  .hero h1 {
+    font-size: 20px; /* smaller text */
+    text-align: center;
+  }
+}
